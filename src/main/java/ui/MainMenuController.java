@@ -19,7 +19,7 @@ import javafx.scene.layout.Pane;
  */
 /**
  *
- * @author MainWin7
+ * @author Tyler Allen
  */
 public class MainMenuController implements Initializable{
     @FXML

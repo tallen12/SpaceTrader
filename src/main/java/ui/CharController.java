@@ -68,6 +68,7 @@ public class CharController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         cpoints=5;
         p=n=c=e=0;
+        points.setText(""+cpoints);
         pp.setOnAction((ActionEvent event) -> {
             if(cpoints>0){
                 cpoints--;
@@ -143,7 +144,13 @@ public class CharController implements Initializable {
             skill.setEngineering(e);
             skill.setNavigation(n);
             skill.setPiloting(p);
+            skill.setName(name.getText());
             skill.save();
+            System.out.println("Engineering:"+skill.getEngineering());
+            System.out.println("Charisma:"+skill.getCharisma());
+            System.out.println("Navigation:"+skill.getNavigation());
+            System.out.println("Piloting:"+skill.getPiloting());
+            System.out.println("Name:"+skill.getName());
             Platform.exit();
         });    
         cancel.setOnAction((ActionEvent ever)->{
@@ -155,5 +162,8 @@ public class CharController implements Initializable {
     }
     public Button getCancel(){
         return cancel;
+    }
+    public Skillset getSkillset(){
+        return skill;
     }
 }

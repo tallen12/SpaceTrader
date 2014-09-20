@@ -8,7 +8,7 @@ public class Skillset implements Savable {
 	private int navigation;
 	private int engineering;
 	private int charisma;
-
+        private String name;
 	public Skillset() {
 		this.piloting = 0;
 		this.navigation = 0;
@@ -52,5 +52,10 @@ public class Skillset implements Savable {
 	public String save() {
 		return "skillset";
 	}
-
+        public String getName(){
+            return name;
+        }
+        public void setName(String name){
+            this.name=name;
+        }
 }
