@@ -8,6 +8,10 @@ public class Planet {
 		this.pos = pos;
 	}
 
+    public Planet(String name, Position pos) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 	public Position getPos() {
 		return pos;
 	}

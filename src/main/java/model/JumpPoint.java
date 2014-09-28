@@ -1,12 +1,16 @@
 package model;
 
+import model.StarSystem;
+import java.awt.geom.Point2D;
+
 public class JumpPoint {
 
-	private System targetSys;
+	private StarSystem targetSys;
 	private Position targetPos;
 	private Position pos;
 
-	public JumpPoint(Position pos, System targetSys,Position targetPos) {
+	public JumpPoint(Position pos, StarSystem targetSys,
+					 Position targetPos) {
 		pos = this.pos;
 		targetSys = this.targetSys;
 		targetPos = this.targetPos;
@@ -16,7 +20,7 @@ public class JumpPoint {
 		return pos;
 	}
 
-	public System getTargetSystem() {
+	public StarSystem getTargetSystem() {
 		return targetSys;
 	}
 
@@ -25,5 +29,4 @@ public class JumpPoint {
 	}
 
 
-    
 }
