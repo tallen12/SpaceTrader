@@ -35,3 +35,8 @@ sourceSets {
     }
   }
 }
+test {
+   filter {
+      includeTestsMatching "*Test"
+   }
+}
